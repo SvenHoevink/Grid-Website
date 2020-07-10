@@ -1,5 +1,4 @@
 body{
-    padding: 0px;
     margin: 0px;
 }
 
@@ -12,14 +11,19 @@ body{
     transition: all 0.3s linear;
 }
 
-.nav-main{
-    display: flex;
-    list-style: none;
-    font-size: 0.6em;
-}
 
 li{
-    padding: 10px;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.7em;
+}
+
+.list{
+    margin: 0px;
+    padding: 0px;
+    display:flex;
+    text-decoration: none;
+    list-style: none;
 }
 
 .contact{
@@ -28,15 +32,29 @@ li{
 
 .cover{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50vh;
+    flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.cover > img{
+margin-top: 50px;
+margin-bottom: 50px;
+height: 30vh;
+width: 30vh;
+cursor: default;
 }
 
 .grid-container{
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.box{
+    background-color: rgba(8, 12, 10, 0.52);
+    margin: 20px;
+    padding: 100px;
 
 }
 
@@ -44,20 +62,25 @@ li{
     width: 100%;
 }
 
-.box{
-    background-color: #444;
-    padding: 100px;
+footer > p{
+    text-align: center;
+    font-size: 0.7em;
+    padding: 0px;
+    margin: 0px;
+    
 }
+
+.navbar{
+    position: fixed;
+    width: 100%;
+}
+
 
 .zone:hover {
     -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-}
-
-.footer{
-    text-align: center;
 }
 
 /*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
@@ -67,7 +90,6 @@ li{
 .green{
     background: #56B870; /* Old browsers */
     background: -moz-linear-gradient(top, #56B870 0%, #a5c956 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#56B870), color-stop(100%,#a5c956)); /* Chrome,Safari4+ */
     background: -webkit-linear-gradient(top, #56B870 0%,#a5c956 100%); /* Chrome10+,Safari5.1+ */
     background: -o-linear-gradient(top, #56B870 0%,#a5c956 100%); /* Opera 11.10+ */
     background: -ms-linear-gradient(top, #56B870 0%,#a5c956 100%); /* IE10+ */
@@ -80,7 +102,7 @@ li{
 .red{
     background: #C655BE; /* Old browsers */
     background: -moz-linear-gradient(top, #C655BE 0%, #cf0404 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#C655BE), color-stop(100%,#cf0404)); /* Chrome,Safari4+ */
+   
     background: -webkit-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* Chrome10+,Safari5.1+ */
     background: -o-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* Opera 11.10+ */
     background: -ms-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* IE10+ */
@@ -93,7 +115,6 @@ li{
 .yellow{
     background: #F3AAAA; /* Old browsers */
     background: -moz-linear-gradient(top, #F3AAAA 0%, #febf04 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F3AAAA), color-stop(100%,#febf04)); /* Chrome,Safari4+ */
     background: -webkit-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* Chrome10+,Safari5.1+ */
     background: -o-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* Opera 11.10+ */
     background: -ms-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* IE10+ */
@@ -106,7 +127,6 @@ li{
 .blue{
     background: #7abcff; /* Old browsers */
     background: -moz-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7abcff), color-stop(44%,#60abf8), color-stop(100%,#4096ee)); /* Chrome,Safari4+ */
     background: -webkit-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Chrome10+,Safari5.1+ */
     background: -o-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Opera 11.10+ */
     background: -ms-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* IE10+ */
